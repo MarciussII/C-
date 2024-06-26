@@ -1,0 +1,12 @@
+O método Process.Kill tem uma função muito específica. Digamos que ao realizar um robô de download
+de arquivos, após cada download, o arquivo abre automaticamente para visualização. Como o arquivo
+está aberto, não é possível renomeá-lo, assim, criando uma trava na execução do robô.
+Para isso, usamos o método, que faz com que feche um determinado aplicativo no Windows.
+
+  public bool SeekAndDestroy()
+  {
+    Foreach (Process clsProcess in Process.GetProcesses())
+    {
+      If (clsProcess.ProcessName.startsWith(“”) Nesse campo, colocaremos o nome do aplicativo que desejamos fechar.
+    }
+   }
